@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login TikTok</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="login-page">
+
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/tiktok-logo.png" alt="TikTok Logo" />
+        </div>
+
+        <h2>Seja bem-vindo ao TikTok</h2>
+        <h6>Realize seu <b>login</b> e comece a avaliar!</h6>
+
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Digite seu e-mail" required />
+            <input type="password" id="password" placeholder="Senha" required />
+            <button type="submit" id="loginButton">Entrar</button>
+        </form>
+
+        <div class="footer-text">
+            Este site é protegido pelo reCAPTCHA e está sujeito à 
+            <b>Política de Privacidade</b> e aos <b>Termos de Serviço</b>.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Aqui você pode colocar uma lógica de validação, se quiser
+            window.location.href = "quiz.html";
+        });
+    </script>
+</body>
+</html>

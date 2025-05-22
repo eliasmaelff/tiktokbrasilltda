@@ -1,0 +1,264 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------- Login Page ---------- */
+body.login-page {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.login-container .logo img {
+    height: 52px;
+    margin-bottom: 10px;
+}
+
+.login-container h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.login-container h6 {
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-container input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(110deg, #1d8db9, #000 50%, #aa1e1a);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+    background: linear-gradient(to right, #01b7ff, #da0808);
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+}
+
+.footer-text b {
+    color: #bd1111;
+}
+
+/* ---------- Quiz Page ---------- */
+body.quiz-page {
+    background-color: #fff;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header .logo {
+    height: 35px;
+}
+
+.wallet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wallet-info {
+    background-color: #eee;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.wallet button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.wallet button:hover {
+    background-color: #c0392b;
+}
+
+.container {
+    width: 95%;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress {
+    background-color: #1d8db9;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.instruction {
+    color: #777;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.answers button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.answer-button.selected {
+  background-color: #00ccff;
+  color: white;
+  border: 2px solid #fff;
+}
+
+
+.answers button:hover {
+    background-color: #2fb6eb;
+}
+
+.next-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #080101;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #af0808;
+}
+
+.bonus-box {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.terms {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.valor {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: rgb(255, 50, 78);
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #1d8db9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.popup-content button:hover {
+    background-color: #00a9f7;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ative seu Cadastro</title>
+    <style>
+        :root {
+            --tiktok-pink: #fe2c55;
+            --tiktok-blue: #25f4ee;
+            --tiktok-green: #1DB954;
+            --tiktok-bg: #000000;
+            --tiktok-text: #ffffff;
+        }
+
+        body {
+            background-color: var(--tiktok-bg);
+            color: var(--tiktok-text);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: #111111;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            color: var(--tiktok-pink);
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .step {
+            background-color: var(--tiktok-pink);
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .content {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            color: var(--tiktok-blue);
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: var(--tiktok-pink);
+            color: #fff;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 20px auto;
+            width: 85%;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px var(--tiktok-pink), 
+                        0 0 20px var(--tiktok-blue);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--tiktok-pink),
+                        0 0 40px var(--tiktok-blue);
+            cursor: pointer;
+        }
+
+        .alert {
+            background-color: #8B0000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 11px;
+            opacity: 0.7;
+        }
+
+        .footer a {
+            color: var(--tiktok-blue);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="images/new-latest-tiktok-logo-png.png" alt="TikTok Logo" class="logo">
+        <div class="title">Ative seu Cadastro para Receber o PIX</div>
+
+        <div class="step">1º Passo</div>
+        <div class="content">
+            Para <span class="highlight">cadastrar sua chave Pix</span>, é necessário realizar o pagamento da 
+            <span class="highlight">Taxa de Cadastro</span> no valor de <span class="highlight">R$19,90</span>.
+            <br><br>
+            <span class="highlight">OBS:</span> A taxa é <span class="highlight">100% devolvida</span> no seu primeiro saque.
+        </div>
+
+        <div class="step">2º Passo</div>
+        <div class="content">
+            Após o pagamento, você receberá imediatamente seu <span class="highlight">1º saque</span> e acesso ao nosso App para continuar lucrando.
+        </div>
+
+        <!-- BOTÃO DE PAGAMENTO -->
+        <a href="https://pay.kirvano.com/596720d8-8aee-4182-bca6-2436f97ff4f1" target="_blank" class="btn">
+            PAGAR TAXA E RECEBER PIX
+        </a>
+
+        <div class="alert">
+            ⚠ Após gerar o Pix, você terá <span class="highlight">10 minutos</span> para concluir o pagamento e sacar.
+            <br><br>
+            Caso não pague no prazo, seu saldo será <span class="highlight">100% devolvido</span> para o App.
+        </div>
+
+        <div class="footer">
+            <a href="#">Política de Privacidade</a> |
+            <a href="#">Termos de Uso</a> |
+            <a href="#">Direitos Autorais</a><br><br>
+            © 2025 TikTok Brasil. Todos os direitos reservados.
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Premiado</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="quiz-page">
+
+    <div class="header">
+        <img src="images/tiktok-logo.png" alt="Logo" class="logo" />
+        <div class="wallet">
+            <div class="wallet-info" id="wallet">Saldo: R$100,00</div>
+            <button id="sacarBtnTopo">SACAR</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div id="quiz">
+            <div class="question" id="question">Pergunta aqui...</div>
+            <div class="instruction">Selecione uma opção para continuar:</div>
+            <div class="answers" id="answers"></div>
+            <button class="next-button" id="nextButton" disabled>Continuar</button>
+
+            <div class="bonus-box">
+                Concorra a um bônus adicional
+            </div>
+            <div class="terms">
+                Ao participar das atividades de recompensa, você concorda com nossos <b>Termos e Condições</b>.
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content reward-popup">
+            <h2>Nova recompensa</h2>
+            <h3>Você ganhou</h3>
+            <div class="valor" id="valorGanho">+R$00,00</div>
+            <p>Responda mais pesquisas para ganhar até R$850</p>
+            <button id="continuarPopup">Continuar recebendo</button>
+        </div>
+    </div>
+
+    <div id="bonusPopup" class="popup">
+        <div class="popup-content bonus-popup">
+            <h2>Bônus Adicional</h2>
+            <h3>Você ganhou</h3>
+            <div class="valor" id="bonusValor">R$72,82</div>
+            <p>Clique no botão abaixo para sacar suas recompensas</p>
+            <button id="sacarBonusBtn">Sacar dinheiro</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
